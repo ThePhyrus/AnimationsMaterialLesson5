@@ -47,12 +47,12 @@ class SecondActivity : AppCompatActivity() {
                         return epicenter
                     }
                 }
-                transitionExplode.duration = 2000
+                transitionExplode.duration = 5000
                 transitionExplode.excludeTarget(button,true)
-                val transitionFade = Fade()
+                val transitionFade = Fade().addTarget(button)
                 val transitionSet = TransitionSet()
                 transitionSet.addTransition(transitionExplode)
-                transitionFade.duration = 999999999
+                transitionFade.duration = 10000
                 transitionSet.addTransition(transitionFade)
                 TransitionManager.beginDelayedTransition(binding.rcView,transitionSet)
                 binding.rcView.adapter = null
