@@ -1,12 +1,10 @@
 package com.the_phyrus.animationsmateriallesson5
 
 import android.os.Bundle
+import android.view.Gravity
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import androidx.transition.ChangeBounds
-import androidx.transition.Fade
-import androidx.transition.TransitionManager
-import androidx.transition.TransitionSet
+import androidx.transition.*
 import com.the_phyrus.animationsmateriallesson5.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -29,6 +27,11 @@ class MainActivity : AppCompatActivity() {
             val transitionSet = TransitionSet()
             transitionSet.addTransition(transitionFade)
             transitionSet.addTransition(transitionChangeBounds)
+
+            val transitionSlide = Slide(Gravity.END)
+            transitionSlide.duration = 3000
+            transitionSet.addTransition(transitionSlide)
+
 
 //            TransitionManager.beginDelayedTransition(binding.transitionsContainer, transitionFade)
 //            TransitionManager.beginDelayedTransition(binding.transitionsContainer, transitionChangeBounds)
