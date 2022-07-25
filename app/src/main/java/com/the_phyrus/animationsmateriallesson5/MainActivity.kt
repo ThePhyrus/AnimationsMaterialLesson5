@@ -32,7 +32,6 @@ class MainActivity : AppCompatActivity() {
             transitionSlide.duration = 3000
             transitionSet.addTransition(transitionSlide)
 
-
 //            TransitionManager.beginDelayedTransition(binding.transitionsContainer, transitionFade)
 //            TransitionManager.beginDelayedTransition(binding.transitionsContainer, transitionChangeBounds)
             TransitionManager.beginDelayedTransition(binding.transitionsContainer, transitionSet)
@@ -42,8 +41,6 @@ class MainActivity : AppCompatActivity() {
                 View.GONE
             }
             isGone = !isGone
-
         }
-
     }
 }

@@ -24,4 +24,13 @@
         android:layout_height="wrap_content"
         android:text="Animate" />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSecondActivity"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_height="wrap_content"
+        android:text="Second activity" />
+
+
+
 </LinearLayout>
