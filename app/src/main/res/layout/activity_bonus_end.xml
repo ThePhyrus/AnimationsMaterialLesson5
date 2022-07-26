@@ -4,16 +4,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <ImageView
         android:id="@+id/backgroundImage"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:scaleType="centerCrop"
         android:src="@drawable/mars_photo"
-        app:layout_constraintBottom_toTopOf="@+id/description"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#d3d3d3"
+        android:paddingStart="16dp"
+        android:paddingTop="3dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="3dp"
+        android:text="5 июня 2018 г."
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
 
     <TextView
         android:id="@+id/title"
@@ -28,23 +43,10 @@
         android:text="Кратер Даниэлсона"
         android:textColor="#FFFF"
         android:textSize="45sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/date"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#d3d3d3"
-        android:paddingStart="16dp"
-        android:paddingTop="3dp"
-        android:paddingEnd="16dp"
-        android:paddingBottom="3dp"
-        android:text="5 июня 2018 г."
-        android:textSize="12sp"
-        app:layout_constraintRight_toRightOf="@+id/title"
-        app:layout_constraintTop_toBottomOf="@+id/title" />
 
     <TextView
         android:id="@+id/tap"
@@ -73,6 +75,6 @@
         android:textColor="#FFFF"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
