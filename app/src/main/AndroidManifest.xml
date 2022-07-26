@@ -13,53 +13,34 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AnimationsMaterialLesson5"
         tools:targetApi="31">
-
-
         <activity
-            android:name=".BonusActivityDoubleLayout"
+            android:name=".BonusActivityOneLayout"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-
-
+        <activity
+            android:name=".BonusActivityDoubleLayout"
+            android:exported="true">
+        </activity>
         <activity
             android:name=".SixthActivity"
-            android:exported="true">
-
-
-        </activity>
-
-
-
+            android:exported="true"></activity>
         <activity
             android:name=".FifthActivity"
-            android:exported="true">
-
-        </activity>
-
+            android:exported="true"></activity>
         <activity
             android:name=".FourthActivity"
-            android:exported="true">
-
-
-        </activity>
+            android:exported="true"></activity>
         <activity
-
             android:name=".ThirdActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".SecondActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".MainActivity"
             android:exported="true" />
