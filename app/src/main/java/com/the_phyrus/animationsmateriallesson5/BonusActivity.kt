@@ -6,17 +6,17 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintSet
 import androidx.transition.ChangeBounds
 import androidx.transition.TransitionManager
-import com.the_phyrus.animationsmateriallesson5.databinding.ActivityAnimationsBonusStartBinding
+import com.the_phyrus.animationsmateriallesson5.databinding.ActivityBonusStartBinding
 
 class BonusActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityAnimationsBonusStartBinding
+    private lateinit var binding: ActivityBonusStartBinding
     private var isPressed: Boolean = false
     private val duration: Long = 1000L
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityAnimationsBonusStartBinding.inflate(layoutInflater)
+        binding = ActivityBonusStartBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.tap.setOnClickListener {
             isPressed = !isPressed
@@ -27,11 +27,11 @@ class BonusActivity : AppCompatActivity() {
             TransitionManager.beginDelayedTransition(binding.constraintContainer, transition)
             if (isPressed) {
                 binding.tap.text = "Hide description"
-                constraintSet.clone(this, R.layout.activity_animations_bonus_end)
+                constraintSet.clone(this, R.layout.activity_bonus_end)
                 constraintSet.applyTo(binding.constraintContainer)
             } else {
                 binding.tap.text = "Show description"
-                constraintSet.clone(this, R.layout.activity_animations_bonus_start)
+                constraintSet.clone(this, R.layout.activity_bonus_start)
                 constraintSet.applyTo(binding.constraintContainer)
             }
         }
