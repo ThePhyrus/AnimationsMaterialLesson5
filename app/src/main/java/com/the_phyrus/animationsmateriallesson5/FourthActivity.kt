@@ -1,4 +1,4 @@
-package com.the_phyrus
+package com.the_phyrus.animationsmateriallesson5
 
 import android.os.Bundle
 import android.view.Gravity

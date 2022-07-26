@@ -1,4 +1,4 @@
-package com.the_phyrus
+package com.the_phyrus.animationsmateriallesson5
 
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter

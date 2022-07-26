@@ -1,4 +1,4 @@
-package com.the_phyrus
+package com.the_phyrus.animationsmateriallesson5
 
 import android.graphics.Rect
 import android.os.Bundle
@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import androidx.transition.*
-import com.the_phyrus.animationsmateriallesson5.R
 import com.the_phyrus.animationsmateriallesson5.databinding.ActivitySecondBinding
 
 class SecondActivity : AppCompatActivity() {
