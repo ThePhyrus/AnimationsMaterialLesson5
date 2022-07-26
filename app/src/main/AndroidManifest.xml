@@ -16,7 +16,7 @@
 
 
         <activity
-            android:name=".BonusActivity"
+            android:name=".BonusActivityDoubleLayout"
             android:exported="true">
 
             <intent-filter>
