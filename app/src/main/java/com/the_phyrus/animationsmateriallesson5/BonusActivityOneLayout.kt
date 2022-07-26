@@ -31,6 +31,9 @@ class BonusActivityOneLayout : AppCompatActivity() {
             isDescriptionShown = !isDescriptionShown
             if (isDescriptionShown){
                 //show description
+
+                //constraintSet.clear(R.id.description) // на память
+
                 constraintSet.connect(R.id.title, ConstraintSet.END, R.id.backgroundImage, ConstraintSet.END)
                 constraintSet.connect(R.id.date, ConstraintSet.END, R.id.title, ConstraintSet.END)
                 constraintSet.connect(R.id.description, ConstraintSet.TOP, R.id.tap, ConstraintSet.BOTTOM)
