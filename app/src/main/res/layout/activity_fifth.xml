@@ -13,6 +13,7 @@
         android:id="@+id/transparentBackground"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:alpha="0"
         android:animateLayoutChanges="true"
         android:background="@color/white"
         android:clickable="false" />
@@ -26,6 +27,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
+            android:alpha="0"
+            android:clickable="false"
             android:orientation="horizontal"
             android:paddingEnd="32dp"
             android:paddingBottom="32dp">
@@ -52,6 +55,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
+            android:alpha="0"
+            android:clickable="false"
             android:orientation="horizontal"
             android:paddingEnd="32dp"
             android:paddingBottom="32dp">
@@ -77,10 +82,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
-            app:srcCompat="@drawable/ic_settings_48"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
-            android:elevation="6dp" />
+            android:elevation="6dp"
+            app:srcCompat="@drawable/ic_settings_48" />
 
     </FrameLayout>
 </FrameLayout>
